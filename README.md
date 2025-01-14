@@ -97,6 +97,8 @@ Before running the script, make sure to download the pre-trained model **superst
 ---
 
 ## Results
+The image shows the predicted superstructures in yellow, roofs occupied by superstructures in red, and free roofs in green.
+![Neuchâtel Test Area](test_area_output.JPG)
 For the Neuchâtel test area, the following results were obtained:
 
 ```plaintext
@@ -107,9 +109,6 @@ Roof segments without superstructures: 1985
 Total energy: 108.544935 GWh/year
 Lost energy: 36.897526 GWh/year (33.99% of total)
 ```
----
-The image shows the predicted superstructures in yellow, roofs occupied by superstructures in red, and free roofs in green.
-![Neuchâtel Test Area](test_area_output.JPG)
 ---
 
 ## Requirements
