@@ -25,8 +25,8 @@ This script performs the following tasks:
 5. **Downloads TIFF and PNG images** for each roof segment from a WMS.
 
 ### Input
-- **`SOLKAT_DACH.gpkg`**: A GeoPackage containing roof geometries with attributes.
-- **`area_of_interest.shp`**: A shapefile defining the polygon of interest.
+- **`SOLKAT_DACH.gpkg`**: GeoPackage containing all swiss roof geometries with attributes which can be downloaded at https://opendata.swiss/de/dataset/eignung-von-hausdachern-fur-die-nutzung-von-sonnenenergie/resource/2446ce7b-8709-42a1-b293-49b48129a5b4.
+- **`area_of_interest.shp`**: A shapefile defining the polygon of interest (Neuchâtel Test Area in this case).
 
 #### Required Columns in `SOLKAT_DACH.gpkg`
 - `DF_UID`: Unique ID for each roof segment.
@@ -54,7 +54,7 @@ This script performs the following tasks:
 ```bash
 python create_dataset.py
 ```
-Ensure that the paths to `SOLKAT_DACH.gpkg` and `area_of_interest.shp` are correctly set in the script.
+Before running the script, ensure that **SOLKAT_DACH.gpkg** is correctly downloaded and placed in the **data** folder. Once the script is executed, it will save the building-centered images in the **test_images** and **test_images_tif** directories in PNG and TIFF formats, respectively.
 
 ---
 
@@ -92,7 +92,7 @@ This script uses a pre-trained segmentation model to predict roof superstructure
 ```bash
 python script_predict.py
 ```
-Ensure that the paths to the model, images, and filtered shapefile are correctly set in the script.
+Before running the script, make sure to download the pre-trained model **superstructures.pth** from Zenodo at https://zenodo.org/records/14646460 and place it in the **models** folder.
 
 ---
 
