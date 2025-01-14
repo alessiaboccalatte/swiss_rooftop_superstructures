@@ -107,7 +107,7 @@ Roof segments without superstructures: 1985
 Total energy: 108.544935 GWh/year
 Lost energy: 36.897526 GWh/year (33.99% of total)
 ```
-
+![Neuchâtel Test Area](test_area_output.JPG)
 ---
 
 ## Requirements
